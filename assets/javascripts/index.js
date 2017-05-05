@@ -1,6 +1,6 @@
-import * as d3 from 'd3'
+import barGraph from './barGraph'
 
 document.addEventListener('DOMContentLoaded', () => {
-  const square = d3.selectAll("rect")
-  square.style("fill", "orange")
+  const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+  barGraph(dataset)
 });
